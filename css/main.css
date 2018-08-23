@@ -1,5 +1,17 @@
 body {
-	background: #EAEAEA;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", Arial, sans-serif;
+	font-size:  16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+	
+	background: #849d8f;
+
+	background: url('../img/bg3.png') no-repeat top center  #9d8b84;
+	background: url('../img/bg2.png') no-repeat top center  #8996a6;
+	background: url('../img/bg1.png') no-repeat top center  #849d8f;
 }
 /*.visually-hidden {
   position: absolute;
