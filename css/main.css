@@ -438,6 +438,13 @@ div.subscription-block {
 }
 /*Страница каталога*/
 
+.internal-page h1 {
+	font-size: 35px;
+	line-height: 41px;
+	color: #ffffff;
+	font-weight: 700;
+}
+
 .internal-page {
 background: #849d8f;
 }
@@ -745,7 +752,45 @@ p.feedback-title {
 
 }
 .feedback-btn {
+
+}
+
+.modal-cart {
+	box-sizing: border-box;
+	width: 540px;
+	color: #323232;
+	font-size: 13px;
+	line-height: 16px;
+	border-radius: 5px;
+  	background-color: #f8f7f4;
+ 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+ 	padding: 20px 15px;
+ 	margin-bottom: 50px;    /*временно*/
+
+}
+
+.cart-item td {
 	
 }
 
+.row-delete {
+	width: 11px;
+	height: 11px;
+	background: url(../img/Х.svg) no-repeat 50% 50% #f8f7f4;
+	border: none;
+}
+.cart-btn {
+	width: 170px;
+	height: 44px;
+	border-radius:50px;
+	color: #fefefe;
+	font-size: 18px;
+	line-height: 24px; 
+}
 
+.cart-list tr:last-child {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+	text-align: right;
+}
