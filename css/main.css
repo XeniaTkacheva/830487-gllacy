@@ -19,7 +19,7 @@ body {
 	width: 1146px;
 	margin: 0 auto;
 	padding: 0 27px;
-	/*background: rgba(60,70,220,0.4); Временно*/
+		background: rgba(120,20,210,0.2); /*Временно*/
 
 }
 
@@ -47,7 +47,7 @@ body {
   vertical-align: middle;
   background-color:  rgba(255, 255, 255, 0.2);
   border: none;
-   background-image: linear-gradient(to top, #e74a35, #f26843);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
   box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
 
@@ -66,57 +66,43 @@ cursor: pointer;
   box-shadow: inset 0px 2px 2px 0 #942718;
 }
 /*---------------Шапка-------------*/
-/*.main-header div {
-	border: 2px solid  #8E50DE;
-}
-.main-header ul {
-	border: 2px solid #3E4CE2;
-}
-.main-header li,
-.main-header a {}
-.main-header p {
-	border: 2px solid yellow;
-}
-*/
-
-
-
 .main-header-logo {
 	margin-top: 9px;
 	margin-right: 10px;
+		outline: 2px solid blue ; /*Временно*/
 }
 
 .main-navigation,
 .navigation-column,
 .navigation-actions {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 }
 
 .main-navigation {
 	flex-direction: column;
-	-ms-align-items: flex-end;
 	align-items: flex-end;
+		outline: 3px dashed red ; /*Временно*/
 }
-/*267
-560*/
+
 .main-header {
 	margin-bottom: 278px;
+}
+.internal-page .main-header {
+	margin-bottom: 0;
 }
 
 .header-contacts {
 	margin: 0;
 	padding: 0;
 	text-align: right;
+		outline: 2px solid blue ; /*Временно*/
 }
 
 .site-navigation  {
 	position: relative;
 	display: flex;
 	width: 406px;
+		outline: 2px solid blue ; /*Временно*/
 }
 .navigation-column {
 	width: 1146px;
@@ -134,7 +120,7 @@ cursor: pointer;
 	margin-left: auto;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-
+		outline: 2px solid blue ; /*Временно*/
 }
 
 
@@ -152,7 +138,6 @@ cursor: pointer;
 .site-navigation>li>a:focus {
 	text-align: center;
 	vertical-align: top;
-	/*padding-top: 10px;*/
  	color: #333333;
  	background-color: #f7f6f3;
  	border-radius: 30px;
@@ -218,13 +203,6 @@ a.catalog-new  {
 	border-radius: 0;
 }*/
 
-
-
-
-
-
-
-
 .btn-search {
 	min-width: 33px;
 	min-height: 33px;
@@ -233,7 +211,6 @@ a.catalog-new  {
 	border-radius: 50%;
 	box-shadow: none;
 }
-
 
 .btn-search:hover,
 .btn-search:focus {
@@ -245,7 +222,6 @@ a.catalog-new  {
 .cart-navigation {
 	margin-left: 10px;
 }
-
 
 .cart-link a,
 .login-link a {
@@ -272,11 +248,9 @@ a.catalog-new  {
 	border-radius: 33px;
 	padding: 10px 16px 9px 44px;
 	color: #323232;
-
 }
+
 .login-btn {
-	/*width: 100px;
-  	height: 44px;*/
   	background-image: linear-gradient(to top, #e74a35, #f26843);
   	box-shadow: 0px 1px 2px 0 #ac1000;
   	border-radius: 50px;
@@ -288,8 +262,6 @@ a.catalog-new  {
 	border-radius: 33px;
   	padding: 10px 17px 9px 45px;
 }
-
-
 
 p.header-contacts {
 	margin: 0;
@@ -309,6 +281,10 @@ p.header-contacts {
 	margin-right:-1px;
 }
 
+.promo {
+
+}
+
 .promo-proffer li {
 	font-size: 60px;
 	line-height: 60px;
@@ -316,8 +292,8 @@ p.header-contacts {
 	font-weight: 700;
 	text-align: center;
 	vertical-align: middle;
-
 }
+
 .promo .proffer-inactive{
 	display: none;
 }
@@ -325,6 +301,7 @@ p.header-contacts {
 .promo-list li {
 	display: inline-block;
 }
+
 .promo-point  button.btn-promo {
 	min-width: 21px;
 	min-height: 21px;
@@ -355,6 +332,7 @@ p.header-contacts {
 	display: inline-block;
 	margin: 0 auto;
 }
+
 .promo a {
 	display: block;
 	font-size: 32px;
@@ -387,12 +365,14 @@ p.header-contacts {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+		outline: 3px dashed red ; /*Временно*/
 }
 
 .bonus-item {
 	width: 560px;
 	height: 229px;
 	border-radius: 15px;
+		outline: 4px solid yellow;  /*Временно*/
 }
 
 .bonus-list li:first-child {
@@ -416,7 +396,7 @@ p.header-contacts {
 	font-weight: 700;
 	color: #ffffff;
 	text-decoration: none;
-	padding: 10px;     	/*времменные отступы*/
+		padding: 10px;     	/*времменные отступы*/
 
 	opacity: 0.99;
 	background-image: linear-gradient(to top, #e74a35, #f26843);
@@ -433,8 +413,11 @@ p.header-contacts {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+		outline: 4px dashed red ; /*Временно*/
+}
 
-	
+.catalog-list {
+	margin-bottom: 47px;
 }
 
 .hits-list li,
@@ -443,9 +426,8 @@ p.header-contacts {
 	box-sizing: border-box;
 	width: 267px;
 	text-align: center;
-	/*background: rgba(255, 200, 0, 0.3);*/
-	/*border: 2px solid yellow;*/
-	margin-bottom: 40px;
+	margin-bottom: 37px;
+		outline: 1px solid red;
 }
 .hits h3,
 .catalog h3,
@@ -453,7 +435,6 @@ p.header-contacts {
 .catalog p {
 	margin: 0;
 	padding: 0;
-
 }
 
 .hits-item h3,
@@ -462,6 +443,11 @@ p.header-contacts {
 	line-height: 22px;
 	font-weight: 500;
 	color: #ffffff;
+	margin-top: 7px;
+}
+
+.hits-item,
+.catalog-item {
 }
 
 .hits-item a,
@@ -469,10 +455,9 @@ p.header-contacts {
 	text-decoration-color: rgba(255, 255, 255, 0.3);
 }
 
-
 .hits-item p {
 	position: absolute;
-	top: 214px;
+	top: 212px;
 	left: 0;
 	font-size: 45px;
 	line-height: 45px;
@@ -483,7 +468,7 @@ p.header-contacts {
 
 .catalog-item p {
 	position: absolute;
-	top: 205px;
+	top: 210px;
 	left: 0;
 	font-size: 45px;
 	line-height: 45px;
@@ -501,8 +486,9 @@ p.header-contacts {
 .catalog-item img {
 	
 	border-radius: 50%;
-	margin-bottom: 10px;
+	/*margin-bottom: 10px;*/
 }
+
 .hits-hit {
 	position: absolute;
 	width: 61px;
@@ -516,16 +502,15 @@ p.header-contacts {
 /*Почему когда в одну ссылку спрятаны текст и картинка 
 наведение на текст срабатывает, а фокус не срабатывает???
 И вообще, по-моему, это не правильно....*/
-/*
+
 .hits-item:hover,
 .hits-item:focus,
 .catalog-item:hover,
 .catalog-item:focus {
-	width: 293px;
-	height: 405px;
+	
 	background: rgba(248, 247, 244, 0.2);
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-} */
+} 
 /*до сюда не правильно, пока закрыла*/
 
 .about-big {
@@ -701,20 +686,35 @@ div.contacts-map  {
 	background-image: linear-gradient(to top, #e74a35, #f26843);
   	box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
 }
-/*Страница каталога*/
+/*-----------------Страница каталога--------------*/
 
 .internal-page h1 {
+	margin: 0;
+	padding: 0;
 	font-size: 35px;
 	line-height: 41px;
 	color: #ffffff;
 	font-weight: 700;
+	margin-bottom: 25px;
+		outline: 1px solid yellow;
 }
 
 .internal-page {
 background: #849d8f;
 }
 
+.breadcrumbs {
+	display: flex;
+	align-items: baseline;
+	margin-top: -20px;
+	/*margin-bottom: 10px;*/
+		outline: 1px solid red;  /*Временно*/
+}
+
 .breadcrumbs a {
+	margin: 0;
+	padding: 0;
+	padding-right: 20px;
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 16px;
@@ -733,9 +733,33 @@ background: #849d8f;
 	line-height: 16px;
 }
 
-.filters {
-
+.filters fieldset {
+	border: none;
+	padding: 0;
+	
 }
+
+.filters-form {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 36px;
+		outline: 3px dashed red; /*Временно*/
+}
+
+.filters-sorting {
+	width: 193px;
+	margin-right: 14px;
+	margin-bottom: 18px;
+		outline: 1px solid blue;   /*Временно*/
+}
+
+.filters-sorting legend {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
 .filters-sorting select{
 	color: #000000;
 	font-size: 14px;
@@ -755,6 +779,20 @@ background: #849d8f;
 	background-color: rgba(255, 255, 255, 0.2);
 }
 
+.filters-price {
+	width: 218px;
+	margin-right: 14px;
+	margin-bottom: 18px;
+		outline: 1px solid blue;   /*Временно*/
+}
+
+.filters-price legend {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
 .filters-price input[type="text"] {
 	border: none;
 	background: transparent;
@@ -765,10 +803,67 @@ background: #849d8f;
 	text-align: right;
 	width: 30px;
 }
-    
+
+.filters-fat {
+	width: 415px;
+	margin-bottom: 18px;
+		outline: 1px solid blue;   /*Временно*/
+	
+
+}
+
+.filters-fat legend {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #ffffff;
+}
+
+.filters-filler label,
+.filters-fat label {
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+}
+
+.filters-fat ul {
+	display: flex;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50px;
+	padding: 11px 0px 8px 15px; 
+
+}  
+
+.filters-filler {
+	width: 703px;
+	margin-right: 14px;
+		outline: 1px solid blue;   /*Временно*/
+}
+
+.filters-filler ul {
+	display: flex;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 50px;
+	padding: 11px 0px 8px 15px; 
+}
+
+.filters-filler legend {
+	font-size: 14px;
+	line-height: normal;
+	font-weight: 500;
+	color: #ffffff;
+}
+.filters-option {
+	margin-right: 20px;
+}
+
+.filters-button {
+	padding-top: 20px;
+}
 .filters-btn {
-	width: 144px;
-	height: 37px;
+	box-sizing: border-box;
+	min-width: 144px;
 	background: rgba(255, 255, 255, 0.2);
 	border: 2px solid #ffffff;
 	border-radius: 30px;
@@ -777,6 +872,9 @@ background: #849d8f;
 	line-height: 18px;
 	font-weight: 500;
 	box-shadow: none;
+	padding-top:  12px;
+	padding-bottom: 9px; 
+		outline: 1px solid blue;   /*Временно*/
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -790,19 +888,38 @@ background: #849d8f;
   	box-shadow: inset 0px 2px 1px 0 #696969;
 
 }
-
+.pagination-block {
+	width: 100%;
+	/*min-height: 50px;*/
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 49px;
+		outline: 2px solid green;
+}
+.pagintion-list {
+	display: flex;
+	justify-content: space-between;
+	width: 190px;
+	outline: 4px dotted yellow;
+}
 .pagination-btn {
 	background-color: transparent;
 	border: none;
 	color: #ffffff;
 }
-
-.pagintion-list li  {
-	display: inline-block;
-	padding-top:  25px;
+.pagination-item {
+		outline: 1px solid yellowgreen;
 }
+.pagination-btn-back {
+	margin-right: 7px;
+}
+
+.pagination-btn-next {
+	margin-left: 7px;
+}
+
 .pagintion-list a {
-	display: inline-block;
+	display: block;
 	font-size: 16px;
 	line-height: 26px;
 	font-weight: 500;
@@ -811,10 +928,10 @@ background: #849d8f;
 	width: 27px;
 	height: 26px;
 	text-align: center;
-	vertical-align: middle;
+	/*align-items: center;*/
+	/*padding-top: 6px;*/
 	border-radius: 50%;
-	border: 1px solid black; /*временно*/
-              /*Не могу поставить номера в центр кружочка*/
+	/*border: 1px solid black; /*временно*/*/
 }
 .pagination-item-current a {
 	color: #323232;
@@ -835,7 +952,8 @@ background: #849d8f;
 .main-footer {
 	display: flex;
 	margin-top: 18px;
-	/*justify-content: space-between;*/
+		outline: 3px dashed red; /*Временно*/
+
 }
 
 .footer-social {
@@ -843,7 +961,7 @@ background: #849d8f;
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: 90px;
-	border: 2px solid blue ;
+	     outline: 2px solid blue ; /*Временно*/
 }
 
 .footer-social a {
@@ -858,7 +976,7 @@ background: #849d8f;
 	width: 350px;
 	display: flex;
 	flex-wrap: wrap;
-		border: 2px solid blue ;
+		outline: 2px solid blue ; /*Временно*/
 
 }
 .footer-providers a {
@@ -869,10 +987,10 @@ background: #849d8f;
 }
 
 .footer-copyright {
-	width: 200px;
+	width: 190px;
 	margin-left: auto;
-	padding-left: 10px;
-		border: 2px solid blue ;
+	padding-left: 12px;
+		outline: 2px solid blue ; /*Временно*/
 
 }
 
@@ -911,7 +1029,7 @@ background: #849d8f;
 	color: #fefefe;
 }
 
-/*Всплывающие формы*/
+/*------------Всплывающие формы------------------*/
 
 ::placeholder {
 	color: #999999;
@@ -953,14 +1071,13 @@ input[type="search"]::placeholder {
   	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   	padding: 20px 15px;
   	margin-bottom: 50px;     /*временно*/     
-
 }
+
 .modal-login input {
 	box-sizing: border-box;
 	width: 241px;
   	height: 44px;
   	margin-top: 20px;
-
 }
 
 .modal input:hover,
@@ -990,7 +1107,6 @@ input[type="search"]::placeholder {
   	border-radius: 5.1px;
   	background-color: #f8f7f4;
   	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  	/*padding: 10px 17px 20px 19px;*/
   	margin-bottom: 50px;     /*временно*/  
 }
 .modal-login a {
@@ -1013,13 +1129,13 @@ input[type="search"]::placeholder {
   	border: solid 2px rgba(178, 178, 178, 0.3);
   	margin-top: 20px;
 }
+
 .modal-feedback textarea {
 	width: 428px;
   	height: 155px;
   	border: solid 2px rgba(178, 178, 178, 0.3);
   	margin-top: 20px;
   	margin-bottom: 25px;
-
 }
 
 .modal-feedback input::placeholder {

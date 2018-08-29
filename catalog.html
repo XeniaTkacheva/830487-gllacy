@@ -86,11 +86,11 @@
                 </fieldset>
                 <fieldset class="filters-price">
                     <legend>
-                        Цена:
+                        Цена:<input class="filters-miniprice" type="text" name="filters-miniprice" value="100"> руб. -
+                    <input class="filters-maxiprice" type="text" name="filters-maxiprice" value="500"> руб.
                     </legend>
                     <label class="visually-hidden" for="filters-price">Цена:</label>
-                    <input class="filters-miniprice" type="text" name="filters-miniprice" value="100"> руб. -
-                    <input class="filters-maxiprice" type="text" name="filters-maxiprice" value="500"> руб.
+                    
                     <input  type="range" name="filters-price" id="filters-price" min="0" max="500" step="5">
                 </fieldset>
                 <fieldset class="filters-fat">
@@ -161,9 +161,11 @@
                         </li>
                     </ul>
                 </fieldset>
-                <button class="btn filters-btn" type="submit">Применить</button>
+                <div class="filters-button">
+                    <button class="btn filters-btn" type="submit">Применить</button>
+                </div>
             </form>
-  		</section>	
+        </section>	
   		<section class="catalog">
   		    <h2 class="visually-hidden">Список сливочного мороженого</h2>
   		    <ul class="catalog-list default-list">
@@ -255,30 +257,31 @@
                     <p>420&nbsp;&#8381;<span>/кг</span></p>
                 </li>
             </ul>
-            
-            <ul class="pagintion-list default-list">
-                <li class="pagination-item">
-                    <button class="pagination-btn pagination-btn-back" type="button" aria-label="Назад" title="На предыдущую страницу">&lt;</button>
-                </li>
-                <li class="pagination-item pagination-item-current">
-                    <a href="#">1</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#">4</a>
-                </li>
-                <li class="pagination-item">
-                    <a href="#">5</a>
-                </li>
-                <li class="pagination-item">
-                    <button class="pagination-btn pagination-btn-next" type="button" aria-label="Вперед" title="На следующую страницу">&gt;</button>
-                </li>
-            </ul>
+            <div class="pagination-block">
+                <ul class="pagintion-list default-list">
+                    <li class="pagination-item">
+                        <button class="pagination-btn pagination-btn-back" type="button" aria-label="Назад" title="На предыдущую страницу">&lt;</button>
+                    </li>
+                    <li class="pagination-item pagination-item-current">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">4</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a href="#">5</a>
+                    </li>
+                    <li class="pagination-item">
+                        <button class="pagination-btn pagination-btn-next" type="button" aria-label="Вперед" title="На следующую страницу">&gt;</button>
+                    </li>
+                </ul>
+            </div>
         </section>
 	</main>
     <footer class="main-footer container">
