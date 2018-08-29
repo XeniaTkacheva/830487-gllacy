@@ -19,7 +19,7 @@ body {
 	width: 1146px;
 	margin: 0 auto;
 	padding: 0 27px;
-		background: rgba(120,20,210,0.2); /*Временно*/
+		/*background: rgba(120,20,210,0.2); Временно*/
 
 }
 
@@ -69,7 +69,7 @@ cursor: pointer;
 .main-header-logo {
 	margin-top: 9px;
 	margin-right: 10px;
-		outline: 2px solid blue ; /*Временно*/
+		/*outline: 2px solid blue ; Временно*/
 }
 
 .main-navigation,
@@ -81,7 +81,7 @@ cursor: pointer;
 .main-navigation {
 	flex-direction: column;
 	align-items: flex-end;
-		outline: 3px dashed red ; /*Временно*/
+		/*outline: 3px dashed red ; Временно*/
 }
 
 .main-header {
@@ -95,14 +95,14 @@ cursor: pointer;
 	margin: 0;
 	padding: 0;
 	text-align: right;
-		outline: 2px solid blue ; /*Временно*/
+		/*outline: 2px solid blue ; Временно*/
 }
 
 .site-navigation  {
 	position: relative;
 	display: flex;
 	width: 406px;
-		outline: 2px solid blue ; /*Временно*/
+		/*outline: 2px solid blue ; Временно*/
 }
 .navigation-column {
 	width: 1146px;
@@ -120,7 +120,7 @@ cursor: pointer;
 	margin-left: auto;
 	flex-wrap: wrap;
 	justify-content: flex-end;
-		outline: 2px solid blue ; /*Временно*/
+		/*outline: 2px solid blue ; Временно*/
 }
 
 
@@ -365,14 +365,14 @@ p.header-contacts {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
-		outline: 3px dashed red ; /*Временно*/
+		/*outline: 3px dashed red ; Временно*/
 }
 
 .bonus-item {
 	width: 560px;
 	height: 229px;
 	border-radius: 15px;
-		outline: 4px solid yellow;  /*Временно*/
+		/*outline: 4px solid yellow;  Временно*/
 }
 
 .bonus-list li:first-child {
@@ -413,7 +413,7 @@ p.header-contacts {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-		outline: 4px dashed red ; /*Временно*/
+		/*outline: 4px dashed red ; Временно*/
 }
 
 .catalog-list {
@@ -427,7 +427,7 @@ p.header-contacts {
 	width: 267px;
 	text-align: center;
 	margin-bottom: 37px;
-		outline: 1px solid red;
+		/*outline: 1px solid red;   /*Временно*/
 }
 .hits h3,
 .catalog h3,
@@ -573,7 +573,6 @@ p.header-contacts {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
-	/*border: 2px solid violet;*/
 }
 
 .news h2,
@@ -696,7 +695,7 @@ div.contacts-map  {
 	color: #ffffff;
 	font-weight: 700;
 	margin-bottom: 25px;
-		outline: 1px solid yellow;
+		/*outline: 1px solid yellow; /*Временно*/
 }
 
 .internal-page {
@@ -708,7 +707,7 @@ background: #849d8f;
 	align-items: baseline;
 	margin-top: -20px;
 	/*margin-bottom: 10px;*/
-		outline: 1px solid red;  /*Временно*/
+		/*outline: 1px solid red;  Временно*/
 }
 
 .breadcrumbs a {
@@ -743,14 +742,14 @@ background: #849d8f;
 	display: flex;
 	flex-wrap: wrap;
 	margin-bottom: 36px;
-		outline: 3px dashed red; /*Временно*/
+		/*outline: 3px dashed red; Временно*/
 }
 
 .filters-sorting {
 	width: 193px;
 	margin-right: 14px;
 	margin-bottom: 18px;
-		outline: 1px solid blue;   /*Временно*/
+		/*outline: 1px solid blue;   Временно*/
 }
 
 .filters-sorting legend {
@@ -783,7 +782,7 @@ background: #849d8f;
 	width: 218px;
 	margin-right: 14px;
 	margin-bottom: 18px;
-		outline: 1px solid blue;   /*Временно*/
+		/*outline: 1px solid blue;   Временно*/
 }
 
 .filters-price legend {
@@ -807,7 +806,7 @@ background: #849d8f;
 .filters-fat {
 	width: 415px;
 	margin-bottom: 18px;
-		outline: 1px solid blue;   /*Временно*/
+		/*outline: 1px solid blue;   Временно*/
 	
 
 }
@@ -838,7 +837,7 @@ background: #849d8f;
 .filters-filler {
 	width: 703px;
 	margin-right: 14px;
-		outline: 1px solid blue;   /*Временно*/
+		/*outline: 1px solid blue;   Временно*/
 }
 
 .filters-filler ul {
@@ -874,7 +873,7 @@ background: #849d8f;
 	box-shadow: none;
 	padding-top:  12px;
 	padding-bottom: 9px; 
-		outline: 1px solid blue;   /*Временно*/
+		/*outline: 1px solid blue;   Временно*/
 }
 .filters-btn:hover,
 .filters-btn:focus {
@@ -894,13 +893,13 @@ background: #849d8f;
 	display: flex;
 	justify-content: flex-end;
 	margin-bottom: 49px;
-		outline: 2px solid green;
+		/*outline: 2px solid green;  /*Временно*/
 }
 .pagintion-list {
 	display: flex;
 	justify-content: space-between;
 	width: 190px;
-	outline: 4px dotted yellow;
+		/*outline: 4px dotted yellow;  /*Временно*/
 }
 .pagination-btn {
 	background-color: transparent;
@@ -908,7 +907,7 @@ background: #849d8f;
 	color: #ffffff;
 }
 .pagination-item {
-		outline: 1px solid yellowgreen;
+		/*outline: 1px solid yellowgreen;   /*Временно*/
 }
 .pagination-btn-back {
 	margin-right: 7px;
@@ -931,7 +930,7 @@ background: #849d8f;
 	/*align-items: center;*/
 	/*padding-top: 6px;*/
 	border-radius: 50%;
-	/*border: 1px solid black; /*временно*/*/
+	/*border: 1px solid black; /*временно*/
 }
 .pagination-item-current a {
 	color: #323232;
@@ -952,7 +951,7 @@ background: #849d8f;
 .main-footer {
 	display: flex;
 	margin-top: 18px;
-		outline: 3px dashed red; /*Временно*/
+		/*outline: 3px dashed red; /*Временно*/
 
 }
 
@@ -961,7 +960,7 @@ background: #849d8f;
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: 90px;
-	     outline: 2px solid blue ; /*Временно*/
+	     /*outline: 2px solid blue ; /*Временно*/
 }
 
 .footer-social a {
@@ -976,7 +975,7 @@ background: #849d8f;
 	width: 350px;
 	display: flex;
 	flex-wrap: wrap;
-		outline: 2px solid blue ; /*Временно*/
+		/*outline: 2px solid blue ; /*Временно*/
 
 }
 .footer-providers a {
@@ -990,7 +989,7 @@ background: #849d8f;
 	width: 190px;
 	margin-left: auto;
 	padding-left: 12px;
-		outline: 2px solid blue ; /*Временно*/
+		/*outline: 2px solid blue ; /*Временно*/
 
 }
 
@@ -1070,7 +1069,7 @@ input[type="search"]::placeholder {
   	background-color: #f8f7f4;
   	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
   	padding: 20px 15px;
-  	margin-bottom: 50px;     /*временно*/     
+  	/*margin-bottom: 50px;     /*временно*/     
 }
 
 .modal-login input {
