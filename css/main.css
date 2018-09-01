@@ -241,7 +241,7 @@ a.catalog-new  {
 .cart-link,
 .login-link {
 	display: flex;
-	max-width: 100px;
+	max-width: 120px;
 } 
 .cart-link a,
 .login-link a {
@@ -325,7 +325,6 @@ p.header-contacts {
 	height: 21px;
 	border-radius: 50%;
 	border: 2px solid #ffffff;
-	background: transparent;
 	margin-right: 5px;
 }
 
@@ -1073,14 +1072,6 @@ background: #849d8f;
 	     /*outline: 2px solid blue ; /*Временно*/
 }
 
-/*
-.footer-social a {
-	font-size: 13px;
-	line-height: 18px;
-	color: #ffffff;
-	text-decoration-color: rgba(255, 255, 255, 0.2);
-}*/
-
 .social-btn {
 	display: flex;
 	border: 3px solid rgba(255, 255, 255, 0.5);
@@ -1142,10 +1133,6 @@ a.providers-btn-main {
 	background: url(../img/heart.svg) ;
 
 }
-
-/*.providers-btn {
-padding-left: 20px;
-}*/
 
 .footer-copyright {
 	width: 190px;
