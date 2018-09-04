@@ -67,6 +67,7 @@ img {
 }
 
 .btn {
+	display: block;
   font: inherit;
   text-align: center;
   color: #ffffff;
@@ -265,8 +266,8 @@ div.catalog-new-under {
 	max-width: 120px;
 	position: relative;
 } 
-.cart-link a,
-.login-link a {
+.cart-link>a,
+.login-link>a {
 	display: block;
 	font-size: 14px;
 	line-height: 16px;
@@ -278,7 +279,7 @@ div.catalog-new-under {
   	padding: 8px 17px 8px 43px;
 }
 
-.login-link a { 
+.login-link>a { 
   	background:  rgba(255, 255, 255, 0.2);
 }
 
@@ -308,11 +309,35 @@ a.user-login::before {
 .login-link:hover .modal-login {
 	display: block;	
 }
-
+.login-button {
+	display: flex;
+	justify-content: space-between;
+}
 .login-btn {
-  	background-image: linear-gradient(to top, #e74a35, #f26843);
+	padding: 8px 26px;
+	background-image: linear-gradient(to top, #e74a35, #f26843);
   	box-shadow: 0px 1px 2px 0 #ac1000;
   	border-radius: 50px;
+}
+
+.for-login-btn {
+	display: flex;
+	align-items: center;
+}
+
+.restore p {
+	display: block;
+	vertical-align: top;
+}
+
+.restore {
+	display: flex;
+	width: 122px;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	text-align: left;
+	vertical-align: top;
 }
 
 .cart-link a{
@@ -371,7 +396,7 @@ p.header-contacts {
 .promo-proffer h3  {
 	width: 700px;
 	margin: 0 auto;
-	margin-bottom: 30px;
+	margin-bottom: 32px;
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
@@ -528,9 +553,10 @@ p.header-contacts {
 .hits-list,
 .catalog-list {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	align-items: flex-start;
+	margin-left:  -26px;
 }
 
 .catalog-list {
@@ -544,9 +570,11 @@ p.header-contacts {
 	width: 267px;
 	text-align: center;
 	margin-bottom: 38px;
+	margin-left: 26px;
 }
 
-.hits-list li:hover,
+
+/*.hits-list li:hover,
 .catalog-list li:hover {
 	box-sizing: content-box;
 	width: 267px;
@@ -554,7 +582,7 @@ p.header-contacts {
 	text-align: center;
 	z-index: 10;
 	
-}
+}*/
 
 .hits h3,
 .catalog h3,
@@ -575,10 +603,6 @@ p.header-contacts {
 	margin-right: 5px;
 }
 
-.hits-item,
-.catalog-item {
-
-}
 
 .hits-item a,
 .catalog-item a {
@@ -615,7 +639,7 @@ p.header-contacts {
 
 .hits-item img,
 .catalog-item img {
-	width: 267px;
+	/*width: 267px;*/
 	border-radius: 50%;
 }
 
@@ -633,14 +657,14 @@ p.header-contacts {
 наведение на текст срабатывает, а фокус не срабатывает???
 И вообще, по-моему, это не правильно....*/
 
-.hits-item:hover,
+/*.hits-item:hover,
 .hits-item:focus,
 .catalog-item:hover,
 .catalog-item:focus {
 	
 	background: rgba(248, 247, 244, 0.2);
 	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-} 
+} */
 /*до сюда не правильно, пока закрыла*/
 
 .about-big {
@@ -755,18 +779,26 @@ p.header-contacts {
 	border-radius: 15px;
 	background: url(../img/bg-mintice.jpg) no-repeat top left 143px  #ffffff;
 }
+.strips {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 560px;
+	height: 220px;
+	background: url(../img/avia.svg) no-repeat /*50% 50%*/;
+	padding: 10px;
+	border-radius: 15px;
+}
 
 .subscription-block {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	box-sizing: border-box;
-	width: 560px;
-	height: 220px;
+	width: 550px;
+	min-height: 210px;
 	background:  #f8f7f4;
-	border: 5px solid blue;
-	border-left-width: 6px;
-	border-image: url(../img/avia.svg) 5 round round;
 	border-radius: 15px;
 	padding: 29px 22px 35px 20px;
 }
@@ -778,7 +810,6 @@ p.header-contacts {
 }
 
 .subscription p {
-
 	color: #5a5a5a;
 }
 
@@ -866,6 +897,10 @@ p.contacts-address {
  }
  .contacts-btn {
   	margin-top: auto;
+}
+
+ .feedback-btn:hover .modal-feedback {
+	display: block;
 }
 
 .contacts-marker {
@@ -1441,15 +1476,18 @@ a.providers-btn-main {
   	border-radius: 5px;
   	background-color: #f8f7f4;
   	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-  	padding: 20px 15px;
+  	padding: 19px 15px;
 }
 
 .modal-login input {
 	box-sizing: border-box;
 	width: 241px;
   	height: 44px;
-  	margin-top: 20px;
-  	padding-left: 12px;
+  	padding: 3px 12px;
+  	margin-bottom: 20px;
+}
+.modal-login input[type="password"] {
+	mb18
 }
 
 .modal input:hover,
@@ -1468,27 +1506,33 @@ a.providers-btn-main {
 	margin: 0;
 }
 .modal-login {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 	position: absolute;
 	top: 36px;
 	right: -2px;
 	display: none;
-	/*box-sizing: border-box;*/
+	box-sizing: border-box;
 	width: 277px;
+	padding: 19px  18px 22px 19px;
    	text-align: center;
   	border-radius: 5.1px;
   	background-color: #f8f7f4;
   	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
+  	z-index: 30;
 }
-  	/*background-origin: padding-box;*/
-  	/*background-clip: padding-box;*/
-  	/*border-top: 10px solid transparent;*/
-  	/*margin-bottom: 50px;     /*временно*/  
-
+  
 .modal-login a {
 	color: #323232;
 	font-size: 13px;
 	line-height: 24px;
 	text-decoration-color: rgba(50, 50, 50, 0.3);
+	padding: 0; 
+}
+
+.modal-login p {
+	padding: 0;
 }
 
 .modal-login a:hover,
@@ -1497,12 +1541,12 @@ a.providers-btn-main {
 	color: #e84d37;
 }
 
-
 .modal-feedback input {
+	box-sizing: border-box;
 	width: 267px;
 	height: 44px;
   	border: solid 2px rgba(178, 178, 178, 0.3);
-  	margin-top: 20px;
+  	margin-bottom: 20px;
   	padding-left: 12px;
 }
 
@@ -1511,8 +1555,7 @@ a.providers-btn-main {
 	width: 428px;
   	height: 155px;
   	border: solid 2px rgba(178, 178, 178, 0.3);
-  	margin-top: 20px;
-  	margin-bottom: 25px;
+  	margin-bottom: 20px;
   	padding: 8px 12px;
 }
 
@@ -1528,30 +1571,35 @@ a.providers-btn-main {
 	top: 339px;
 	left: 50%;
 	margin-left: -219px;
-	/*display: none;*/
+	display: none;
 	box-sizing: border-box;
 	width: 478px;
-  	/*height: 443px;*/
   	border-radius: 10px;
   	background-color: #f8f7f4;
   	color: #323232;
-  	padding: 17px 21px 20px 23px;
+  	padding: 15px 26px 27px 24px;
 
 }
+
+.modal-show {
+	display: block;
+}
+
 p.feedback-title {
   	font-size: 24px;
   	line-height: 28px;
   	font-weight: 500;
+  	margin-bottom: 19px;
 }
 
 .modal-close {
 	position: absolute;
-	top: 16px;
+	top: 15px;
 	right: 17px;
 	width: 18px;
 	height: 17px;
 	border: none;
-	background: url(../img/big.svg) no-repeat 50% 50% #ffffff;
+	background: url(../img/big.svg) no-repeat 50% 50% #f8f7f4;
 }
 .modal-close:hover {
 	cursor: pointer;
@@ -1560,7 +1608,13 @@ p.feedback-title {
 
 }
 .feedback-btn {
-
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fefefe;
+	font-weight: 700;
+	padding: 10px 23px 11px;
+	border-radius: 50px; 
 }
 
 .modal-cart {
@@ -1576,22 +1630,90 @@ p.feedback-title {
 	border-radius: 5px;
   	background-color: #f8f7f4;
  	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
- 	padding: 20px 15px;
- 	margin-bottom: 50px;    /*временно*/
+ 	padding: 20px 14px 21px 15px;
+}
 
+.cart-list tr {
+	vertical-align: top;
+
+}
+.cart-list {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	/*border-bottom:  1px solid red;*/
 }
 
 .cart-item td {
-	
+	box-sizing: border-box;
+	/*outline: 1px solid blue;*/
+	font-size: 13px;
+	line-height: 16px;
+}
+.cart-item {
+	/*outline: 2px solid pink;*/
+
+}
+
+.cart-delete {
+	width: 20px;
+	padding-top: 6px;
+	/*padding: 7px 11px 11px 0px;*/
+	/*vertical-align:  top;*/
+	/*background-color: yellow;*/
 }
 
 .row-delete {
+	margin: 0;
+	padding: 0;
 	width: 11px;
 	height: 11px;
-	background: url(../img/Х.svg) no-repeat 50% 50% #f8f7f4;
+	background: url(../img/del.svg) no-repeat 0 0 #f8f7f4;
 	border: none;
+	vertical-align: middle;
+	/*outline: 1px solid red;*/
 }
-.cart-btn {
+
+.cart-ice {
+	width: 46px;
+	padding-top: 0px;
+	padding-bottom: 17px;
+	text-align: center;
+	/*padding: 3px */
+	/*width: 33px;*/
+}
+.cart-ice img {
+	width: 33px;
+	height: 33px;
+	border-radius: 50%;
+	/*vertical-align: middle;*/
+}
+
+.cart-name {
+	width: 243px;
+	color: #323232;
+	padding: 9px 6px;
+
+}
+.cart-amount-price {
+	width: 120px;
+	padding: 9px 10px;
+	color: #323232;
+}
+.cart-price {
+	color: #999999;
+}
+.cart-sum {
+	width: 80px;
+	padding: 9px 13px;
+	color: #333333;
+
+}
+
+.for-button .cart-btn {
+	padding: 1px 7px 1px;
+	display: block;
 	width: 170px;
 	height: 44px;
 	border-radius:50px;
@@ -1600,11 +1722,21 @@ p.feedback-title {
 	line-height: 24px; 
 }
 
-.cart-list tr:last-child {
+.cart-total {
+
+	margin-top: 3px;
 	font-size: 15px;
 	line-height: 18px;
 	font-weight: 700;
 	text-align: right;
+	border-top: 1px solid #cacac7;
+	padding-top: 14px;
+	color: #323232;
+}
+
+div.for-button {
+	display: flex;
+	justify-content: flex-end;
 }
 
 

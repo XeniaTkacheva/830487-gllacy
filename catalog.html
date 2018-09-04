@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Каталог</title>
+    <title>HTML Academy: Глейси Каталог</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
@@ -130,7 +130,7 @@
                         </div> 		
               		    <ul class="user-navigation default-list">
                                 <li class="login-link">
-                                    <a href="login.html">Вход</a>
+                                    <a  class="user-login" href="login.html">Вход</a>
                                     <section class="modal modal-login">
                                         <h2 class="visually-hidden">Личный кабинет</h2>
                                         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -142,14 +142,18 @@
                                                 <label class="visually-hidden" for="login-password">Введите пароль</label>
                                                 <input class="login-password" type="password" name="login-password" id="login-password" placeholder="Пароль" title="Введите ваш пароль">
                                             </p>
-                                            <button class="btn login-btn" type="submit" title="Для входа в Личный кабинет нажмите кнопку Войти">Войти</button>
-                                            <div class="restore">
-                                                <p class="restore-password">
-                                                    <a href="#" title="Восстановить пароль">Забыли пароль?</a>
-                                                </p>
-                                                <p class="restore-login">
-                                                    <a href="#" title="Зарегистрируйтесь здесь!">Новая регистрация</a>
-                                                </p>
+                                            <div class="login-button">
+                                                <div class="for-login-btn">
+                                                    <button class="btn login-btn" type="submit" title="Для входа в Личный кабинет нажмите кнопку Войти">Войти</button>
+                                                </div>
+                                                <div class="restore">
+                                                    <p >
+                                                        <a class="restore-password" href="#" title="Восстановить пароль" >Забыли пароль?</a>
+                                                    </p>
+                                                    <p >
+                                                        <a href="#" title="Зарегистрируйтесь здесь!">Новая регистрация</a>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </form>
                                     </section>
@@ -162,61 +166,50 @@
                                         <h2 class="visually-hidden">Товары в корзине для заказа</h2>
                                         <table class="cart-list">
                                             <tr class="cart-item">
-                                                <td>
-                                                    <button class="row-delete" type="button">&times;</button>
+                                                <td class="cart-delete">
+                                                    <button class="row-delete" type="button"></button>
                                                 </td>
-                                                <td>
+                                                <td class="cart-ice">
                                                     <img src="img/ice-1.jpg" alt="Мороженое" width="33" height="33">
                                                 </td>
-                                                <td>
+                                                <td class="cart-name">
                                                     Пломбир с апельсиновым джемом
                                                 </td>
-                                                <td>
-                                                    1,5 кг
-                                                </td>
-                                                <td>
+                                                <td class="cart-amount-price">
+                                                    <span class="cart-amount">1,5 кг</span>
                                                     &#215;
+                                                    <span class="cart-price">200 руб.</span>
                                                 </td>
-                                                <td>
-                                                    200 руб.
-                                                </td>
-                                                <td>
+                                                <td class="cart-sum">
                                                     300 руб.
                                                 </td>
                                             </tr>
                                             <tr class="cart-item">
-                                                <td>
-                                                    <button class="row-delete" type="button">&times;</button>
+                                                <td class="cart-delete">
+                                                    <button class="row-delete" type="button"></button>
                                                 </td>
-                                                <td>
+                                                <td class="cart-ice">
                                                     <img src="img/ice-2.jpg" alt="Мороженое" width="33" height="33">
                                                 </td>
-                                                <td>
+                                                <td class="cart-name">
                                                     Клубничный пломбир с присыпкой из белого шоколада
                                                 </td>
-                                                <td>
-                                                    1,5 кг
-                                                </td>
-                                                <td>
+                                                <td class="cart-amount-price">
+                                                    <span class="cart-amount">1,5 кг</span>
                                                     &#215;
+                                                    <span class="cart-price">300 руб.</span>
                                                 </td>
-                                                <td>
-                                                    300 руб.
-                                                </td>
-                                                <td>
+                                                <td class="cart-sum">
                                                     450 руб.
                                                 </td>
                                             </tr>
-                                            <tr class="cart-total">
-                                                <td colspan="6">
-                                                    Итого:
-                                                </td>
-                                                <td>
-                                                    750 руб.
-                                                </td>
-                                            </tr>
-                                        </table>     
-                                        <button class="btn cart-btn" type="button">Оформить заказ</button>
+                                        </table>
+                                            <p class="cart-total">
+                                                Итого: 750 руб.
+                                            </p>
+                                        <div class="for-button">    
+                                            <button class="btn cart-btn" type="button">Оформить заказ</button>
+                                        </div>
                                     </section>
                                 </li>
                             </ul>
@@ -340,7 +333,6 @@
   		    <h2 class="visually-hidden">Список сливочного мороженого</h2>
   		    <ul class="catalog-list default-list">
                 <li class="catalog-item">
-                   
                     <a href="#">
                         <img src="img/1.jpg" alt="Мороженое" width="267" height="267"> 
                         <h3 class="catalog-item-title">
