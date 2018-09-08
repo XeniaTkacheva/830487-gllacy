@@ -400,6 +400,9 @@ p.header-contacts {
 	margin-top: 4px; 
 	margin-right:-1px;
 	vertical-align: middle;
+	color: #ffffff;
+	text-decoration: none;
+	border: none;
 }
 
 .slider {
@@ -516,6 +519,7 @@ p.header-contacts {
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 40px;
+	flex-wrap: wrap;
 }
 
 .bonus-item {
@@ -659,7 +663,7 @@ p.header-contacts {
 } 
 
 .hits-list li {
-	margin-bottom: 40px;
+	margin-bottom: 36px;
 }
 
 /*.hits-list a:hover */
@@ -785,10 +789,11 @@ img.hits-hit {
 	box-sizing: border-box;
 	/*margin: 0 auto;*/
 	width: 1146px;
-	height: 306px;
+	min-height: 306px;
 	border-radius: 15px;
 	background: url(../img/wafer.jpg) #E8DBBB;
 	padding: 26px 20px;
+	padding-bottom: 19px;	
 	margin-bottom: 40px;
 }
 
@@ -887,7 +892,7 @@ img.hits-hit {
 .news-block {
 	box-sizing: border-box;
 	width: 560px;
-	height: 220px;
+	min-height: 220px;
 	padding: 24px 20px;
 	border-radius: 15px;
 	background: url(../img/bg-mintice.jpg) no-repeat top left 143px  #ffffff;
@@ -898,9 +903,9 @@ img.hits-hit {
 	justify-content: center;
 	align-items: center;
 	width: 560px;
-	height: 220px;
-	background: url(../img/avia.svg) no-repeat 50% 50%;
-	padding: 10px;
+	min-height: 210px;
+	background: url(../img/avia.svg) no-repeat 50% 50% /cover;
+	padding: 5px;
 	border-radius: 15px;
 }
 
@@ -910,7 +915,7 @@ img.hits-hit {
 	justify-content: space-between;
 	box-sizing: border-box;
 	width: 550px;
-	height: 208px;
+	min-height: 208px;
 	background:  #f8f7f4;
 	border-radius: 15px;
 	padding: 29px 22px 37px;
@@ -1011,8 +1016,8 @@ p.contacts-address {
 	background-image: linear-gradient(to top, #e74a35, #f26843);
   	box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   	padding: 10px 26px 11px;
-  	text-decoration: none;
- }
+  	
+}
  .contacts-btn {
   	margin-top: auto;
 }
@@ -1121,6 +1126,10 @@ background: #849d8f;
   	-ms-appearance: none;
   	-o-appearance: none;
   	appearance: none;
+}
+
+.filters-sorting select::-ms-expand {
+    display: none;
 }
 
 .filters-sorting select:hover,
