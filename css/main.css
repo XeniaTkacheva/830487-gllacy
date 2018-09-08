@@ -175,6 +175,7 @@ cursor: pointer;
 	background-color: #d07058;
 	padding: 10px 14px;
 	border-radius: 50px;
+	text-decoration: none;
 }
 
 .catalog-entry:hover .catalog-navigation {
@@ -292,11 +293,17 @@ div.catalog-new-under {
 }
 
 a.user-login:hover,
-a.user-login:focus,
 a.user-login:active { 
-  	background: url(../img/login_black.png) no-repeat 20% 50% #f8f7f4;
+  	background: #f8f7f4;
 	color: #323232;
+	/*background-image: url(../img/enter_black.svg);
+	background-repeat: no-repeat;*/
 }
+.login-link:hover .user-login {
+	color: #323232;
+	background: #f8f7f4;
+}
+
 
 a.user-login::before {
 	position: absolute;
@@ -307,11 +314,9 @@ a.user-login::before {
 	left: 15px;
 	background: url(../img/login.svg) no-repeat;
 }
-
-.login-link:hover a.user-login::before,
-.login-link:focus a.user-login::before {
-	background: url(../img/login_black.svg) no-repeat;
-
+/*.login-link:active a.user-login::before,*/
+.login-link:hover a.user-login::before {
+	background: url(../img/enter_black.svg) no-repeat;
 }
 
 .login-link:hover .modal-login {
@@ -428,7 +433,7 @@ p.header-contacts {
 	height: 21px;
 	border-radius: 50%;
 	border: 2px solid #ffffff;
-	margin-right: 5px;
+	margin-right: 4px;
 	vertical-align: top;
 }
 
@@ -489,12 +494,10 @@ p.header-contacts {
 .promo a {
 	display: inline-block;
 	padding: 10px 42px;	
-
 	font-size: 32px;
 	line-height: 44px;
 	font-weight: 700;
 	color: #ffffff;
-
 	background-color: #f26843;
 	text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 	text-decoration: none;
@@ -550,7 +553,6 @@ p.header-contacts {
 
 .bonus-item a {
 	display: block;
-
 	position: absolute;
 	right: 21px;
 	bottom: 24px;
@@ -571,8 +573,8 @@ p.header-contacts {
 .catalog-item img {
 	border-radius: 50%;
 	position: relative;
-
 }
+
 .hits-list,
 .catalog-list {
 	display: -webkit-box;
@@ -603,27 +605,13 @@ p.header-contacts {
 	margin-bottom: 38px;
 	margin-left: 26px;
 }
-/*.hits-item:hover::before,
-.catalog-item:hover::before {
-	content: "";
-    position: absolute;
-    display: block;
-    width: 293px;
-    height: 405px;
-    margin-top: -6px;
-    margin-left: -13px;
-    background-color: rgba(255,255,255,.2);
-    border-radius: 5px;
-    box-shadow: 0 20px 20px rgba(0,0,0,.4);
-    z-index: 5;
- }*/
+
 .hits-link:hover::before,
 .catalog-link:hover::before {
 	content: "";
     position: absolute;
     display: block;
     width: 293px;
-    
     margin-top: -6px;
     margin-left: -13px;
     background-color: rgba(255,255,255,.2);
@@ -659,29 +647,14 @@ p.header-contacts {
     border-radius: 25px;
     box-shadow: 0 2px 2px rgba(85,8,0,.54);
     cursor: pointer;
-    
 } 
 
 .hits-list li {
 	margin-bottom: 36px;
 }
 
-/*.hits-list a:hover */
-
-/*.hits-list li {
-	margin-top: -10;
-	position: absolute;
-	top: -10px;
-	left:-10px;
-	box-sizing: border-box;
-	width: 287px;
-	padding: 10px 10px 100px;
-	text-align: center;
-	z-index: 10;	
-}*/
 .hits-btn {
 	display: none;
-
 }
 
 .catalog-item:hover .hits-btn,
@@ -689,7 +662,6 @@ p.header-contacts {
 	display: block;
 	z-index: 5;
 }
-
 
 .hits h3,
 .catalog h3,
@@ -706,13 +678,7 @@ p.header-contacts {
 	line-height: 22px;
 	font-weight: 500;
 	color: #ffffff;
-	
-	/*margin-left: 5px;
-	margin-right: 5px;*/
-	/*-webkit-text-decoration-color: rgba(255, 255, 255, 0.3);*/
-	/*text-decoration-color: rgba(255, 255, 255, 0.3);*/
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-
 }
 
 .hits-image,
@@ -720,12 +686,10 @@ p.header-contacts {
 	margin-bottom:  8px;
 }
 
-
 .hits-item a,
 .catalog-item a {
 	display: block;
 	text-decoration: none;
-	
 	cursor: pointer;
 }
 
@@ -738,7 +702,6 @@ p.header-contacts {
 	font-weight: 700;
 	color: #ffffff;
   	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
-  	
 }
 
 .catalog-item p {
@@ -750,7 +713,6 @@ p.header-contacts {
 	font-weight: 700;
 	color: #ffffff;
   	text-shadow: 0.5px 0.9px 3px rgba(49, 50, 53, 0.5);
-  	
 }
 
 .hits-item span,
@@ -758,7 +720,6 @@ p.header-contacts {
 	margin-left: 3px;
 	font-size: 30px;
 }
-
 
 img.hits-hit {
 	position: absolute;
@@ -768,22 +729,6 @@ img.hits-hit {
 	left: 0;
 	z-index: 30;
 }
-
-
-
-/*Почему когда в одну ссылку спрятаны текст и картинка 
-наведение на текст срабатывает, а фокус не срабатывает???
-И вообще, по-моему, это не правильно....*/
-
-/*.hits-item:hover,
-.hits-item:focus,
-.catalog-item:hover,
-.catalog-item:focus {
-	
-	background: rgba(248, 247, 244, 0.2);
-	box-shadow: 0px 20px 20px 0 rgba(0, 0, 0, 0.4);
-} */
-/*до сюда не правильно, пока закрыла*/
 
 .about-big {
 	box-sizing: border-box;
@@ -924,7 +869,6 @@ img.hits-hit {
 .subscription-form {
 	display: flex;
 	justify-content: space-between;
-		/*border: 1px solid red;  /*Временно*/
 }
 
 .subscription p {
@@ -1016,6 +960,7 @@ p.contacts-address {
 	background-image: linear-gradient(to top, #e74a35, #f26843);
   	box-shadow: 0px 2px 2px 0 rgba(172, 16, 0, 0.64);
   	padding: 10px 26px 11px;
+  	text-decoration: none;
   	
 }
  .contacts-btn {
@@ -1556,21 +1501,35 @@ a.providers-btn-main {
 	text-decoration-color: rgba(255, 255, 255, 0.2);
 	width: 190px;
 }
-
-
 /*------------Всплывающие формы------------------*/
 
-::placeholder {
+::-webkit-input-placeholder {
 	color: #999999;
 	font-size: 16px;
 	line-height: 24px;
+	font-weight: 400;
+}
+:-ms-input-placeholder {
+	color: #999999;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+::-ms-input-placeholder {
+	color: #999999;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+::placeholder {
+	color: #999999;
+	font-size: 16px;
 	font-weight: 400;
 }
 
 .modal {
 	z-index: 20;
 }
-
 
 .modal input {
 	box-sizing: border-box;
@@ -1583,6 +1542,27 @@ a.providers-btn-main {
  	font-weight: 700;
 }
 
+.modal-login input::-webkit-input-placeholder,
+.modal-search input::-webkit-input-placeholder {
+	color: #999999;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+.modal-login input:-ms-input-placeholder,
+.modal-search input:-ms-input-placeholder {
+	color: #999999;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+.modal-login input::-ms-input-placeholder,
+.modal-search input::-ms-input-placeholder {
+	color: #999999;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
 .modal-login input::placeholder,
 .modal-search input::placeholder {
 	color: #999999;
@@ -1697,29 +1677,25 @@ a.providers-btn-main {
 	color: #999999;
 	font-size: 16px;
 	line-height: 24px;
-
 }
 .modal-feedback input:-ms-input-placeholder {
 	font-weight: 400;
 	color: #999999;
 	font-size: 16px;
 	line-height: 24px;
-
 }
 .modal-feedback input::-ms-input-placeholder {
 	font-weight: 400;
 	color: #999999;
 	font-size: 16px;
 	line-height: 24px;
-
 }
 .modal-feedback input::placeholder {
 	font-weight: 400;
 	color: #999999;
 	font-size: 16px;
-	line-height: 24px;
-
 }
+
 .modal-feedback {
 	position: fixed;
 	top: 339px;
@@ -1732,7 +1708,6 @@ a.providers-btn-main {
   	background-color: #f8f7f4;
   	color: #323232;
   	padding: 15px 26px 27px 24px;
-
 }
 
 .modal-show {
@@ -1796,37 +1771,29 @@ p.feedback-title {
 	margin: 0;
 	padding: 0;
 	border-collapse: collapse;
-	/*border-bottom:  1px solid red;*/
 }
 
 .cart-item td {
 	box-sizing: border-box;
-	/*outline: 1px solid blue;*/
 	font-size: 13px;
 	line-height: 16px;
-}
-.cart-item {
-	/*outline: 2px solid pink;*/
-
 }
 
 .cart-delete {
 	width: 20px;
 	padding-top: 6px;
-	/*padding: 7px 11px 11px 0px;*/
-	/*vertical-align:  top;*/
-	/*background-color: yellow;*/
 }
 
 .row-delete {
+	display: block;
 	margin: 0;
 	padding: 0;
-	width: 11px;
-	height: 11px;
-	background: url(../img/del.svg) no-repeat 0 0 #f8f7f4;
+	min-width: 11px;
+	min-height: 11px;
+	background: /*url(../img/del.svg) no-repeat 0 0*/ #f8f7f4;
 	border: none;
 	vertical-align: middle;
-	/*outline: 1px solid red;*/
+	cursor: pointer;
 }
 
 .cart-ice {
@@ -1834,22 +1801,20 @@ p.feedback-title {
 	padding-top: 0px;
 	padding-bottom: 17px;
 	text-align: center;
-	/*padding: 3px */
-	/*width: 33px;*/
 }
+
 .cart-ice img {
 	width: 33px;
 	height: 33px;
 	border-radius: 50%;
-	/*vertical-align: middle;*/
 }
 
 .cart-name {
 	width: 243px;
 	color: #323232;
 	padding: 9px 6px;
-
 }
+
 .cart-amount-price {
 	width: 120px;
 	padding: 9px 10px;
@@ -1862,7 +1827,6 @@ p.feedback-title {
 	width: 80px;
 	padding: 9px 13px;
 	color: #333333;
-
 }
 
 .for-button .cart-btn {
@@ -1889,8 +1853,12 @@ p.feedback-title {
 }
 
 div.for-button {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-end;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: flex-end;
 }
 
 
