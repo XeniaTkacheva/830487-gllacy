@@ -1110,21 +1110,26 @@ background: #849d8f;
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(255, 255, 255, 0.2) url(../img/icon-down-dir.png) no-repeat center right 13px ;
 	border: none;
 	padding-top: 9px;
-	padding-left: 10px;
+	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 8px;
+	-webkit-appearance: none;
+  	-moz-appearance: none;
+  	-ms-appearance: none;
+  	-o-appearance: none;
+  	appearance: none;
 }
 
+.filters-sorting select:hover,
+.filters-sorting select:focus,
 .filters-sorting select:active {
-	color: #000000;
-	font-size: 16px;
-	line-height: 18px;
-	background: #ffffff;
-	border: none;
+	color: #323232;
+	background: rgba(255, 255, 255, 1) url(../img/icon_down_black.png) no-repeat center right 15px ;
 }
+
 .filters input {
 	width: 100px;
 	border: none;
@@ -1710,7 +1715,7 @@ a.providers-btn-main {
 	position: fixed;
 	top: 339px;
 	left: 50%;
-	margin-left: -219px;
+	margin-left: -229px;
 	display: none;
 	box-sizing: border-box;
 	width: 478px;
