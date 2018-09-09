@@ -1753,7 +1753,7 @@ a.providers-btn-main {
 }
 
 .modal {
-	z-index: 20;
+	z-index: 40;
 }
 
 .modal input {
