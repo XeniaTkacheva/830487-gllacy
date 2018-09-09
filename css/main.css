@@ -682,23 +682,6 @@ p.header-contacts {
 	margin-left: 26px;
 }
 
-/*.hits-link:hover::before,
-.catalog-link:hover::before {
-	content: "";
-    position: absolute;
-    display: block;
-    width: 293px;
-    margin-top: -6px;
-    margin-left: -13px;
-    background-color: rgba(255,255,255,.2);
-    border-radius: 5px;
-    -webkit-box-shadow: 0 20px 20px rgba(0,0,0,.4);
-            box-shadow: 0 20px 20px rgba(0,0,0,.4);
-    z-index: 5;
-    top: 0;
-    bottom: -75px;
- }*/
-
 .hits-link::before,
 .catalog-link::before {
 		content: "";
