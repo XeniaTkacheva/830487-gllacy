@@ -188,9 +188,7 @@ cursor: pointer;
 	padding: 8px 14px;
 	font-weight: 700;
 	color: #ffffff;
-/*	-webkit-text-decoration-color: rgba(255, 255, 255, 0.3);
-			text-decoration-color: rgba(255, 255, 255, 0.3);
-*/	text-decoration: none;
+	text-decoration: none;
 }
 
 .site-item>a:hover,
@@ -643,7 +641,7 @@ p.header-contacts {
 	width: 560px;
 	min-height: 229px;
 	border-radius: 15px;
-	padding: 16px 21px 23px 18px ;
+	padding: 16px 21px 23px 18px;
 }
 
 .bonus-list li:first-child {
@@ -748,6 +746,7 @@ p.header-contacts {
 	top: 0;
 	bottom: -75px;
 }
+
 .hits-item:hover .hits-link::before,
 .hits-btn:hover .hits-link::before,
 .catalog-item:hover .catalog-link::before,
@@ -1295,7 +1294,7 @@ p.contacts-address {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
-	background: rgba(255, 255, 255, 0.2) url(../img/icon-down-dir.png) no-repeat center right 13px ;
+	background: rgba(255, 255, 255, 0.2) url(../img/icon-down-dir.png) no-repeat center right 13px;
 	border: none;
 	padding-top: 8px;
 	padding-left: 15px;
@@ -1316,7 +1315,7 @@ p.contacts-address {
 .filters-sorting select:focus,
 .filters-sorting select:active {
 	color: #323232;
-	background: rgba(255, 255, 255, 1) url(../img/icon_down_black.png) no-repeat center right 15px ;
+	background: rgba(255, 255, 255, 1) url(../img/icon_down_black.png) no-repeat center right 15px;
 }
 
 .filters input {
@@ -1449,7 +1448,7 @@ p.contacts-address {
 			box-sizing: border-box;
 	left: 0;
 	top: 0;
-	background: url(../img/radio-off.png) no-repeat 0 0 ;
+	background: url(../img/radio-off.png) no-repeat 0 0;
 }
 
 .fat-radio:focus + label::before,
@@ -1461,8 +1460,9 @@ p.contacts-address {
 
 
 .fat-radio:checked + label::before {
-	background: url(../img/radio-on.png) no-repeat 0 0 ;
+	background: url(../img/radio-on.png) no-repeat 0 0;
 }
+
 .fat-radio:checked:focus + label::before,
 .fat-radio:checked:hover + label::before {
 	background: url(../img/radio-on-white.png) no-repeat 0 0;
@@ -1604,7 +1604,7 @@ p.contacts-address {
 			justify-content: flex-end;
 	padding-bottom: 29px;
 	margin-bottom: 12px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.3) ;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .pagination-list {
@@ -1877,7 +1877,7 @@ a.providers-btn-main {
 .footer-copyright a {
 	font-size: 12px;
 	line-height: 18px;
-	color: #ffffff; /*в стилевом файле для ссылок цвет белый (приоритет прирасхождении с макетом)*/
+	color: #ffffff; /*в стилевом файле для ссылок цвет белый (приоритет при расхождении с макетом)*/
 	text-decoration: none;
 	width: 190px;
 		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -1931,6 +1931,7 @@ a.providers-btn-main {
 	font-size: 14px;
 	line-height: 24px;
 }
+
 .modal-login input:-ms-input-placeholder,
 .modal-search input:-ms-input-placeholder {
 	color: #999999;
@@ -1938,6 +1939,7 @@ a.providers-btn-main {
 	font-size: 14px;
 	line-height: 24px;
 }
+
 .modal-login input::-ms-input-placeholder,
 .modal-search input::-ms-input-placeholder {
 	color: #999999;
@@ -1945,6 +1947,7 @@ a.providers-btn-main {
 	font-size: 14px;
 	line-height: 24px;
 }
+
 .modal-login input::placeholder,
 .modal-search input::placeholder {
 	color: #999999;
@@ -2077,18 +2080,21 @@ a.providers-btn-main {
 	font-size: 16px;
 	line-height: 24px;
 }
+
 .modal-feedback input:-ms-input-placeholder {
 	font-weight: 400;
 	color: #999999;
 	font-size: 16px;
 	line-height: 24px;
 }
+
 .modal-feedback input::-ms-input-placeholder {
 	font-weight: 400;
 	color: #999999;
 	font-size: 16px;
 	line-height: 24px;
 }
+
 .modal-feedback input::placeholder {
 	font-weight: 400;
 	color: #999999;
@@ -2112,7 +2118,6 @@ a.providers-btn-main {
 
 .modal-show {
 	display: block;
-
 	animation: zoomIn 0.6s;
 }
 
@@ -2281,5 +2286,3 @@ div.for-button {
 	-webkit-animation-name: zoomIn;
 	animation-name: zoomIn;
 }
-
-
